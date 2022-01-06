@@ -1,20 +1,26 @@
-// Create two variables: One that holds a fictional user input (a number of
-// your choice) and one that holds no value initially (e.g. "result").
+const sayHello = (name) => {
+  console.log('Hi ' + name);
+};
 
-const userInput = 10;
-let result;
+const serus = (name, phrase) => {
+  console.log(phrase + ' ' + name);
+};
 
-// Set the result variable to 18 plus the value stored in user input.
+const seruss = () => {
+  console.log('Hi hard-coded');
+};
+const serusss = (name) => {
+  console.log('Hi ' + name);
+};
 
-result = 18 + userInput;
+sayHello('Radu');
+serus('Radu', 'Hello')
+seruss('Radu')
+serusss('Radu')
 
-// Add three additional lines of code where you change the result variable
-// again (by subtracting a value of your choice, multiplying it and
-// dividing it).
+const serus5 = (name, phrase = 'Serus') => {
+  console.log(phrase + ' ' + name);
+};
 
-result = result + 10;
-result = result / 2;
-result = result * 9;
-
-alert(result);
-alert(userInput);
+serus5('Radu')
+serus5('Radu', 'sal')
